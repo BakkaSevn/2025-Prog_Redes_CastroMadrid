@@ -22,6 +22,7 @@ public class main {
 	public static void main(String[] args) throws IOException {
 		File f = new File("datos.dat");
 		List<String> Datos=resolucion.lectura(f);
+		f.delete();
 		boolean continuar = true;
 		PrintStream ps = new PrintStream(System.out);
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
