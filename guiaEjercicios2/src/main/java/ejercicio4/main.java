@@ -39,9 +39,22 @@ public class main {
 		matriz2[3][2] = 20;
 		matriz2[3][3] = 16;
 		
-		Thread proceso = new Thread(new primerThreads());
+		Thread proceso = new Thread(new primerThreads(matriz, matriz2, 0, 0));
+		Thread proceso2 = new Thread(new primerThreads(matriz, matriz2, 1, 0));
+		Thread proceso3 = new Thread(new primerThreads(matriz, matriz2, 2, 0));
+		Thread proceso4 = new Thread(new primerThreads(matriz, matriz2, 3, 0));
 		
-		proceso.start();
+		try {
+			proceso.start();
+			Thread.sleep(1000);
+			proceso2.start();
+			Thread.sleep(1000);
+			proceso3.start();
+			Thread.sleep(1000);
+			proceso4.start();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 }
