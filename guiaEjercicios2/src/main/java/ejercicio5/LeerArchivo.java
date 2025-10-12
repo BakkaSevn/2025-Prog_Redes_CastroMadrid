@@ -14,10 +14,12 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 public class LeerArchivo implements Runnable{
-	
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static PrintStream ps = new PrintStream(System.out);
 	static PrintStream err = new PrintStream(System.err);
+	
+	private static int lineasTotales = 0;
+	private static final Object lock = new Object();
 	
 	private final File arch;
 	
@@ -32,7 +34,6 @@ public class LeerArchivo implements Runnable{
 		try {
 			fr = new FileReader(arch);
 			br = new BufferedReader(fr);
-			count = 0;
 			String line = "";
 			String texto = "";
 			while((line = br.readLine()) != null) {
@@ -51,10 +52,18 @@ public class LeerArchivo implements Runnable{
 				Logger.getLogger(LeerArchivo.class.getName()).log(Level.WARNING, null, e);
 			}
 		}
-		return 0;
+		return count;
 	}
 
 	public void run() {
-		leerArchivos();
+		int lineas = leerArchivos();
+		JOptionPane.showMessageDialog(null, "El archivo " + arch.getName() + " tiene " + lineas + " líneas.");
+		synchronized(lock) {
+			lineasTotales += lineas;
+			}
+		}
+	
+	public static int getLineasTotales() {
+		return lineasTotales;
+		}
 	}
-}
