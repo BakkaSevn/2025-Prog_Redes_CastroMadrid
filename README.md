@@ -13,6 +13,20 @@
 
 Este repositorio está dedicado a la materia  **Programación sobre Redes**, dictada por el profesor  **Gonzalo Nicolás Consorti**  en la  **Escuela General José de San Martín ET32**, ubicada en el Distrito Escolar 14. La materia se imparte durante el año  **2025**  y está enfocada en proporcionar una comprensión profunda de los conceptos fundamentales de las redes y la programación orientada a ellas.
 
+
+
+## Objetivo del repositorio
+
+[](https://github.com/BakkaSevn/2025-Prog_Redes_CastroMadrid/tree/GuiaEjercicios-1_2025#objetivo-del-repositorio)
+
+El objetivo principal de este repositorio es ofrecer un espacio centralizado donde podrás encontrar todo el material confeccionado durante el curso, incluyendo:
+
+-   **Ejercicios prácticos**: Una serie de ejercicios y actividades que ayudarán a afianzar los conocimientos adquiridos, con soluciones detalladas para que puedas aprender de manera efectiva.
+    
+-   **Proyectos y entregas**: Los proyectos y entregas que forman parte de la evaluación del curso. Cada proyecto estará acompañado de documentación que explica los objetivos, el código, y los resultados esperados.
+    
+-   **Recursos adicionales**: Material extra que el profesor Gonzalo Nicolás Consorti ha proporcionado para complementar la enseñanza. Esto incluye artículos, tutoriales, y enlaces a recursos externos relacionados con la programación en redes.
+
 ## Consigna TP Final (De a 1)
 
 
@@ -170,19 +184,6 @@ Conecta al jugador al servidor y gestiona su participación en el juego.
 **Victoria:** Un jugador gana si logra alinear tres de sus símbolos en una fila, columna o diagonal.  
 **Derrota:** Si el otro jugador logra alinear tres de sus símbolos antes.  
 **Empate:** Si todas las casillas están ocupadas y no hay ganador.
-
-## Objetivo del repositorio
-
-[](https://github.com/BakkaSevn/2025-Prog_Redes_CastroMadrid/tree/GuiaEjercicios-1_2025#objetivo-del-repositorio)
-
-El objetivo principal de este repositorio es ofrecer un espacio centralizado donde podrás encontrar todo el material confeccionado durante el curso, incluyendo:
-
--   **Ejercicios prácticos**: Una serie de ejercicios y actividades que ayudarán a afianzar los conocimientos adquiridos, con soluciones detalladas para que puedas aprender de manera efectiva.
-    
--   **Proyectos y entregas**: Los proyectos y entregas que forman parte de la evaluación del curso. Cada proyecto estará acompañado de documentación que explica los objetivos, el código, y los resultados esperados.
-    
--   **Recursos adicionales**: Material extra que el profesor Gonzalo Nicolás Consorti ha proporcionado para complementar la enseñanza. Esto incluye artículos, tutoriales, y enlaces a recursos externos relacionados con la programación en redes.
-    
 
 ## Estructura
 
