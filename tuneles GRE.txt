@@ -1,0 +1,85 @@
+S1 - S2
+interface Tunnel1
+ ip address 10.0.0.1 255.255.255.252
+ mtu 1476
+ tunnel source Serial0/1/1
+ tunnel destination 5.0.0.2
+
+S2 - S1
+interface Tunnel1
+ ip address 10.0.0.2 255.255.255.252
+ mtu 1476
+ tunnel source Serial0/1/0
+ tunnel destination 5.0.0.1
+
+S1 - S3
+interface Tunnel2
+ ip address 10.0.0.5 255.255.255.252
+ mtu 1476
+ tunnel source Gig0/0/2
+ tunnel destination 6.0.0.9
+
+S3 - S1
+interface Tunnel1
+ ip address 10.0.0.6 255.255.255.252
+ mtu 1476
+ tunnel source Gig0/0/2
+ tunnel destination 6.0.0.1
+
+S1 - S3
+interface Tunnel4
+ ip address 10.0.0.6 255.255.255.252
+ mtu 1476
+ tunnel source Gig0/0/2
+ tunnel destination 6.0.0.1
+
+S1 - S4
+interface Tunnel3
+ ip address 10.0.0.9 255.255.255.252
+ mtu 1476
+ tunnel source Serial0/1/0
+ tunnel destination 5.0.0.13
+
+S4 - S1
+interface Tunnel3
+ ip address 10.0.0.10 255.255.255.252
+ mtu 1476
+ tunnel source Serial0/1/0
+ tunnel destination 5.0.0.14
+
+S2 - S3
+interface Tunnel2
+ ip address 10.0.0.13 255.255.255.252
+ tunnel source Serial0/1/1
+ tunnel destination 5.0.0.5
+
+S3 - S2
+interface Tunnel2
+ ip address 10.0.0.14 255.255.255.252
+ tunnel source Serial0/1/1
+ tunnel destination 5.0.0.6
+
+S2 - S4
+interface Tunnel3
+ ip address 10.0.0.17 255.255.255.252
+ tunnel source Gig0/0/2
+ tunnel destination 6.0.0.13
+
+S4 - S2
+interface Tunnel3
+ ip address 10.0.0.18 255.255.255.252
+ tunnel source Gig0/0/2
+ tunnel destination 6.0.0.5
+
+S3 - S4
+interface Tunnel3
+ ip address 10.0.0.18 255.255.255.252
+ tunnel source Serial0/1/0
+ tunnel destination 6.0.0.10
+
+
+S4 - S3
+interface Tunnel4
+ ip address 10.0.0.18 255.255.255.252
+ tunnel source Serial0/1/1
+ tunnel destination 6.0.0.9
